@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { use, useState } from "react"
 
-const Button = ({ text }) => {
-
+const Button = ({text, onClick}) => {
+    
     return (
-        <button>{text}</button>
+        <button onClick={onClick}>{text}</button>
     )
 }
 
