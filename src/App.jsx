@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
-import Counter from "./Counter";
+import './App.css';
+import Counter from './Counter';
+import Greeting from './Greeting';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const reset = () => {
-    setCount(count - count);
-  };
-
   return (
-    <div>
-      <Counter count={count} increment={increment} reset={reset}/>
-    </div>
-  );
+    <>
+    <Counter/>
+    <Greeting/>
+    </>
+  )
 }
-export default App
+
+export default App;
